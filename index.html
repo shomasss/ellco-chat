@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1652F0">
+<title>Эллко — напишите нам</title>
+<meta name="description" content="Чат-ассистент Эллко: выберите удобный мессенджер">
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    min-height:100dvh;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:#f5f7fb;
+    color:#0f1b3d;
+    -webkit-font-smoothing:antialiased;
+    display:flex;
+    justify-content:center;
+    padding:32px 20px;
+  }
+  .card{
+    width:100%;
+    max-width:460px;
+    background:#fff;
+    border-radius:24px;
+    padding:36px 24px 28px;
+    box-shadow:0 12px 40px rgba(22,82,240,.08);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+  }
+  .brand{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .brand img{width:84px;height:84px;border-radius:20px;display:block}
+  .brand h1{margin:0;font-size:28px;font-weight:800;letter-spacing:-.5px}
+  .brand p{margin:0;font-size:16px;color:#5b6b8c;line-height:1.4}
+  .buttons{display:flex;flex-direction:column;gap:12px}
+  .btn{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 18px;border-radius:16px;
+    text-decoration:none;color:#fff;font-size:17px;font-weight:600;
+    transition:transform .08s ease, filter .15s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn:hover{filter:brightness(1.05)}
+  .btn .icon{
+    width:36px;height:36px;flex:0 0 36px;
+    background:rgba(255,255,255,.18);
+    border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .btn .label{flex:1;text-align:left;line-height:1.2}
+  .btn .label small{display:block;font-weight:500;font-size:13px;opacity:.85;margin-top:2px}
+  .btn .arrow{opacity:.7}
+  .btn-tg{background:#229ED9}
+  .btn-wa{background:#25D366}
+  .btn-max{background:#1652F0}
+  .foot{font-size:13px;color:#8a98b8;margin-top:4px}
+  @media (max-width:380px){
+    .card{padding:28px 18px 22px;border-radius:20px}
+    .brand h1{font-size:24px}
+    .btn{font-size:16px;padding:14px 16px}
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">
+      <img src="logo.png" alt="Эллко">
+      <h1>Эллко</h1>
+      <p>Выберите удобный мессенджер,<br>чтобы написать нам</p>
+    </div>
+
+    <nav class="buttons">
+      <a class="btn btn-tg" href="https://t.me/ellco_bot" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21.94 4.27c.27-1.18-.86-2.12-1.97-1.67L2.5 9.43c-1.27.5-1.21 2.32.08 2.74l3.94 1.28 1.58 5.02c.18.58.9.79 1.36.39l2.32-2.04 4.18 3.07c.85.62 2.06.18 2.31-.83l3.67-14.79zm-4.21 1.7L9.6 13.36l-.3 3.13-1.18-3.74 9.61-7.78z" fill="currentColor"/></svg>
+        </span>
+        <span class="label">Telegram<small>@ellco_bot</small></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="btn btn-wa" href="https://wa.me/79882928883?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12 21.7c-1.62 0-3.22-.43-4.62-1.25l-3.32.87.88-3.23A9.7 9.7 0 1 1 12 21.7z" fill="currentColor"/></svg>
+        </span>
+        <span class="label">WhatsApp<small>+7 988 292-88-83</small></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="btn btn-max" href="https://max.ru/id050301832300_bot" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 19V5l5 7 4-5 4 5 5-7v14h-3v-7l-3 4-3-4-3 4-3-4v7H3z" fill="currentColor"/></svg>
+        </span>
+        <span class="label">MAX<small>@id050301832300_bot</small></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </nav>
+
+    <p class="foot">© Эллко</p>
+  </main>
+</body>
+</html>
